@@ -1,0 +1,9 @@
+.navbar {
+  background-color: var(--nav-bar-bg) !important;
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+  padding: 2rem 0rem;
+  position: absolute;
+  width: 100%;
+}

@@ -1,0 +1,33 @@
+/* View Stylesheet Import */
+@import "./assets/stylesheets/views/__cart.css";
+@import "./assets/stylesheets/views/__store.css";
+@import "./assets/stylesheets/views/__summary.css";
+@import "./assets/stylesheets/views/__error404.css";
+/* Component Stylesheet Import */
+@import "./assets/stylesheets/components/__cartsummary.css";
+@import "./assets/stylesheets/components/__paymentform.css";
+@import "./assets/stylesheets/components/__paymentsummary.css";
+@import "./assets/stylesheets/components/__productcard.css";
+@import "./assets/stylesheets/components/layout/__navbar.css";
+@import "./assets/stylesheets/components/layout/__navbaricon.css";
+
+:root {
+  --primary-color: #011526;
+  --secondary-color: #a64195;
+  --nav-bar-bg: #77abd9;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+#root {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+.main-body {
+  background-color: var(--primary-color);
+  height: 100%;
+  padding-top: 5.5%;
+  height: 90.3%;
+}

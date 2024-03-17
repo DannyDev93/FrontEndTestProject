@@ -1,11 +1,5 @@
 function Store() {
-  return (
-    <>
-      <div className="main-body">
-        <p style={{ margin: "0" }}>hi store</p>
-      </div>
-    </>
-  );
+  return <></>;
 }
 
 export default Store;

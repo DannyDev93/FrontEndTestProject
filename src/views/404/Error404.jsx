@@ -1,7 +1,11 @@
 function Error404() {
   return (
     <>
-      <h1>Not found</h1>
+      <div>
+        <h1 style={{ color: "white" }}>
+          The page you were trying to access does not exist yet!
+        </h1>
+      </div>
     </>
   );
 }

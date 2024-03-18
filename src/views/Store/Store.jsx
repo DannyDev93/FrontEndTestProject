@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { getProducts } from "../../lib/apis/services";
 import ProductCard from "../../components/ProductCard/ProductCard";
-
+import PaymentSummary from "../../components/PaymentSummary/PaymentSummary";
+import { useSelector } from "react-redux";
 
 function Store() {
   const [products, setProducts] = useState([]);
+  const result_array = useSelector((state) => state.arrayResult);
 
   const getAllProducts = async () => {
     const products = await getProducts();
@@ -24,6 +26,7 @@ function Store() {
           return (
             <ProductCard
               key={product?.id}
+              id={product?.id}
               name={product?.product_name}
               img={product?.product_img}
               description={product?.product_description}
@@ -32,6 +35,7 @@ function Store() {
           );
         })}
       </div>
+      <PaymentSummary result={result_array} />
     </>
   );
 }

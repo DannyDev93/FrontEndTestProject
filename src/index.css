@@ -1,12 +1,10 @@
 /* View Stylesheet Import */
 @import "./assets/stylesheets/views/__cart.css";
 @import "./assets/stylesheets/views/__store.css";
-@import "./assets/stylesheets/views/__summary.css";
-@import "./assets/stylesheets/views/__error404.css";
 /* Component Stylesheet Import */
 @import "./assets/stylesheets/components/__cartsummary.css";
+@import "./assets/stylesheets/components/__cartproductsummary.css";
 @import "./assets/stylesheets/components/__paymentform.css";
-@import "./assets/stylesheets/components/__paymentsummary.css";
 @import "./assets/stylesheets/components/__productcard.css";
 @import "./assets/stylesheets/components/layout/__navbar.css";
 @import "./assets/stylesheets/components/layout/__navbaricon.css";
@@ -44,4 +42,14 @@ h6,
 span {
   margin: 0;
   padding: 0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

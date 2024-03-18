@@ -5,8 +5,8 @@ import { addItem } from "../../lib/state/productSlice";
 function ProductCard(props) {
   const dispatch = useDispatch();
 
-  const handleAdd = () => {
-    dispatch(addItem("New Item"));
+  const handleAdd = (product) => {
+    dispatch(addItem(product));
   };
 
   return (
@@ -22,11 +22,17 @@ function ProductCard(props) {
           <div
             className="add-product-container"
             onClick={() => {
-              handleAdd();
+              handleAdd({
+                id: props?.id,
+                img: props?.img,
+                name: props?.name,
+                description: props?.description,
+                price: props?.price,
+              });
             }}
           >
             <a className="add-product">
-              <FaPlus /> <span>Agregar al carrito</span>
+              <FaPlus /> <span>Add to cart</span>
             </a>
           </div>
         </div>

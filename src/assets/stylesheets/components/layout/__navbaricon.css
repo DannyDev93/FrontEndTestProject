@@ -11,10 +11,10 @@
     height: 100%;
   }
   @media screen and (max-width: 730px) {
-    width: 100%;
+    width: auto;
     display: flex;
     padding: 1rem;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 15%;
     > .mobile-navbar-icon-title {
       display: block;
@@ -23,7 +23,7 @@
       font-weight: 700;
     }
     > svg {
-      width: 10%;
+      width: 35%;
     }
     > .alert {
       width: 15px !important;
@@ -40,5 +40,9 @@
     display: block;
     position: absolute;
     top: 0;
+    @media screen and (max-width: 750px) {
+      top: 15%;
+      left: 30%;
+    }
   }
 }

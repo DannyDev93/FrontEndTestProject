@@ -21,6 +21,7 @@ const productSlice = createSlice({
       return newState;
     },
     clearArray(state) {
+      saveProducts([]);
       return [];
     },
   },

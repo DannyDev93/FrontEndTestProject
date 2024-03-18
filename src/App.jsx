@@ -3,6 +3,7 @@ import NavBar from "./components/Layout/NavBar/NavBar";
 import { Outlet } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { fillItems } from "./lib/state/productSlice";
+import { ToastContainer } from "react-toastify";
 function App() {
   const dispatch = useDispatch();
 
@@ -20,6 +21,7 @@ function App() {
       <NavBar />
       <div className="main-body">
         <Outlet />
+        <ToastContainer />
       </div>
     </>
   );

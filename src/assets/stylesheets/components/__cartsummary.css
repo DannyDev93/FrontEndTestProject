@@ -1,0 +1,67 @@
+.cart-summary {
+  padding: 3rem;
+  background: var(--secondary-color);
+  border-radius: 13px;
+
+  > h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  > .cart-summary-top {
+    max-height: 28vh;
+    overflow: auto;
+    > div {
+      display: flex;
+      display: flex;
+      justify-content: space-between;
+
+      > p {
+        color: white;
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      max-height: 5vh;
+    }
+  }
+  > .cart-summary-bottom {
+    display: flex;
+    justify-content: space-between;
+    > p {
+      color: white;
+    }
+  }
+}
+.summary-payment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  > h2 {
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  > .payment-cards {
+    display: flex;
+    justify-content: space-between;
+    > .payment-card {
+      color: white;
+      padding: 2rem;
+      border: 1px solid white;
+      border-radius: 13px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      cursor: pointer;
+
+      > svg {
+        width: 3vw;
+        height: 3vw;
+      }
+    }
+  }
+}

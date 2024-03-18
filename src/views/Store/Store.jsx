@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { getProducts } from "../../lib/apis/services";
 import ProductCard from "../../components/ProductCard/ProductCard";
 
-
 function Store() {
   const [products, setProducts] = useState([]);
 
@@ -24,6 +23,7 @@ function Store() {
           return (
             <ProductCard
               key={product?.id}
+              id={product?.id}
               name={product?.product_name}
               img={product?.product_img}
               description={product?.product_description}

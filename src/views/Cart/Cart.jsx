@@ -10,7 +10,7 @@ function Cart() {
   useEffect(() => {
     const itemStorage = JSON.parse(localStorage.getItem("frontend_test_cart"));
     if (itemStorage?.length == null || itemStorage?.length < 1) {
-      navigate("/");
+      navigate("/FrontEndTestProject/");
     }
   });
   return (

@@ -40,31 +40,31 @@ function NavBar() {
             }
           >
             <NavBarIcon
-              route="/"
+              route=""
               icon={<FaHome />}
               title="Home"
               alert={false}
             />
             <NavBarIcon
-              route={cartAlert ? "/cart" : null}
+              route={cartAlert ? "cart" : null}
               icon={<FaShoppingCart />}
               title="Cart"
               alert={cartAlert}
             />
             <NavBarIcon
-              route="/favorites"
+              route="favorites"
               icon={<FaHeart />}
               title="Favorites"
               alert={false}
             />
             <NavBarIcon
-              route="/account"
+              route="account"
               icon={<RiAccountCircleFill />}
               title="Account"
               alert={false}
             />
             <NavBarIcon
-              route="/support"
+              route="support"
               title="Support"
               icon={<IoChatbubbleEllipsesSharp />}
               alert={false}

@@ -18,21 +18,21 @@ import Store from "./views/Store/Store";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/FrontEndTestProject",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <Store />,
       },
       {
-        path: "/cart",
+        path: "cart",
         element: <Cart />,
       },
-      { path: "/404", element: <Error404 /> },
+      { path: "404", element: <Error404 /> },
       {
         path: "*",
-        element: <Navigate to="/404" replace />,
+        element: <Navigate to="/FrontEndTestProject/404" replace />,
       },
     ],
   },

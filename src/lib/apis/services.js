@@ -29,3 +29,27 @@
 //     .then((response) => response.json())
 //     .then((data) => console.log(data))
 //     .catch((error) => console.log(error));
+
+export const getProducts = async () => {
+  let url = "https://65f71879b4f842e808851aaf.mockapi.io/products";
+  let products = await fetch(url, {
+    method: "GET",
+    mode: "cors",
+    cache: "no-cache",
+    credentials: "same-origin",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    redirect: "follow",
+    referrerPolicy: "no-referrer",
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      return data;
+    })
+    .catch((error) => {
+      return [];
+    });
+
+  return products;
+};

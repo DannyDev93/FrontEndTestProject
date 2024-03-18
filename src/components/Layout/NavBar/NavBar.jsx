@@ -1,5 +1,5 @@
 import NavBarIcon from "../NavBarIcon/NavBarIcon";
-import { slide as Menu } from "react-burger-menu";
+import { useSelector } from "react-redux";
 
 // Icon imports
 import { FaHome } from "react-icons/fa";
@@ -7,10 +7,21 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { RiAccountCircleFill } from "react-icons/ri";
 import { IoChatbubbleEllipsesSharp } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [toggled, setToggled] = useState(false);
+  const [cartAlert, setCartAlert] = useState(false);
+  const array = useSelector((state) => state.array);
+
+  useEffect(() => {
+    if (array?.length > 0) {
+      setCartAlert(true);
+    } else {
+      setCartAlert(false);
+    }
+  }, [array]);
   return (
     <>
       <div className="navbar">
@@ -37,24 +48,24 @@ function NavBar() {
             <NavBarIcon
               route="/cart"
               icon={<FaShoppingCart />}
-              title="Cart"
-              alert={true}
+              title="Carrito"
+              alert={cartAlert}
             />
             <NavBarIcon
               route="/favorites"
               icon={<FaHeart />}
-              title="Favourites"
+              title="Favoritos"
               alert={false}
             />
             <NavBarIcon
               route="/account"
               icon={<RiAccountCircleFill />}
-              title="Account"
+              title="Cuenta"
               alert={false}
             />
             <NavBarIcon
               route="/support"
-              title="Support"
+              title="Soporte"
               icon={<IoChatbubbleEllipsesSharp />}
               alert={false}
             />

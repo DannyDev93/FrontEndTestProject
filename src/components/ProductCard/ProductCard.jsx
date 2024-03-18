@@ -32,7 +32,7 @@ function ProductCard(props) {
             }}
           >
             <a className="add-product">
-              <FaPlus /> <span>Agregar al carrito</span>
+              <FaPlus /> <span>Add to cart</span>
             </a>
           </div>
         </div>

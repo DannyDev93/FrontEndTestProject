@@ -62,6 +62,14 @@
         width: 3vw;
         height: 3vw;
       }
+
+      @media screen and (max-width: 750px) {
+        padding: 1rem;
+        > svg {
+          width: 10vw;
+          height: 10vw;
+        }
+      }
     }
   }
 }

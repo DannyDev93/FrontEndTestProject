@@ -24,14 +24,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto";
-  height: 100vh !important;
+  min-height: 100vh !important;
   width: 100% !important;
   overflow: auto;
 }
 
 .main-body {
   background-color: var(--primary-color);
-  min-height: 91%;
+  padding: 3rem;
+  flex-grow: 1;
 }
 p,
 h1,

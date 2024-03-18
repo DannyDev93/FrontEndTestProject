@@ -1,7 +1,10 @@
 function Cart() {
   return (
     <>
-      <h1>hi from cart</h1>
+      <div className="cart-container">
+        <div className="cart-left"></div>
+        <div className="cart-right"></div>
+      </div>
     </>
   );
 }

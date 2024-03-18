@@ -1,0 +1,47 @@
+/* View Stylesheet Import */
+@import "./assets/stylesheets/views/__cart.css";
+@import "./assets/stylesheets/views/__store.css";
+@import "./assets/stylesheets/views/__summary.css";
+@import "./assets/stylesheets/views/__error404.css";
+/* Component Stylesheet Import */
+@import "./assets/stylesheets/components/__cartsummary.css";
+@import "./assets/stylesheets/components/__paymentform.css";
+@import "./assets/stylesheets/components/__paymentsummary.css";
+@import "./assets/stylesheets/components/__productcard.css";
+@import "./assets/stylesheets/components/layout/__navbar.css";
+@import "./assets/stylesheets/components/layout/__navbaricon.css";
+
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #011526;
+  --secondary-color: #a64195;
+  --nav-bar-bg: #77abd9;
+  --mobile-nav-background: #d8f2f2;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  min-height: 100vh !important;
+  width: 100% !important;
+  overflow: auto;
+}
+
+.main-body {
+  background-color: var(--primary-color);
+  padding: 3rem;
+  flex-grow: 1;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  margin: 0;
+  padding: 0;
+}

@@ -113,7 +113,7 @@ function PaymentForm(props) {
             </div>
 
             <div className="payment-summary-form">
-              <h2>TOTAL A PAGAR</h2>
+              <h2>TOTAL</h2>
               <h4>${props?.total}</h4>
             </div>
           </div>
